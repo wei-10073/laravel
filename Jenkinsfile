@@ -5,7 +5,7 @@ pipeline {
       when {
         beforeAgent true
         anyOf {
-          branch 'master'
+          branch 'main'
         }
       }
       agent {
