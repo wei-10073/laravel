@@ -15,6 +15,10 @@ pipeline {
         unittest()
       }
     }
-
+  }
+  post {
+    always {
+      slackNotification(1)
+    }
   }
 }
